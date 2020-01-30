@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BadEye</title>
+    <title>Сноуборд</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style-light-them-eye.css" id="CSSstyle">
+    <link rel="stylesheet" href="../css/style-light-them.css" id="CSSstyle">
+</head>
 
 <body>
+  <div class="preloader"></div>
+<div class="bigcontent">
+  <input type="submit" id="tema"  class="forStyleBtn1" onclick ="ChangeThem()"  value="Тема">
 
- <input type="submit" id="tema"  class="forStyleBtn1" onclick ="ChangeThem()"  value="Тема">
- <a href="../index.html" class="ssilka">Режим</a>
- 
- <div id="head">
+    <a href="/html/indexEye.html" class="ssilka">Режим</a>
+
+    <div id="head">
    <div class="container">
      <div class="row justify-content-center">
         <div class="col-lg-8 ">
@@ -25,7 +29,7 @@
         </div>
      </div>
    </div>
- </div>
+    </div>
 
     <header class="container">
        <nav>
@@ -38,7 +42,7 @@
       </nav>    
     </header>
 
-
+    <div id="content">
         <div id="section1" class=" container">
 
           <div class="row head_section">
@@ -62,6 +66,10 @@
                         <div class="carousel-caption d-md-block" >
                           <h5 >Фрирайд</h5>
                           <h5 >All-Mountain</h5>
+                          <!--<div class="container">
+                            <div class="row"><p>Наиболее распространённый стиль катания на сноуборде.</p> </div>
+                            <div class="row"><p>Для спуска используются любые склоны, имеющие снежный покров, чаще всего не подготовленные.</p></div>
+                          </div>-->
                         </div>
                       </div>
 
@@ -70,15 +78,17 @@
                         <div class="carousel-caption  d-md-block align-text2" >
                           <h5>Карвинг</h5>
                           <h5>Curving</h5>
+                          <!--<p>Карвинг – это повороты на скорости без ее потери, с полностью зарезанным в снег кантом.</p>-->
                         </div>
                       </div>
 
                       <div class="carousel-item">
                         <img src="../img/styleimg3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block align-text3">
+                        <div class="carousel-caption  d-md-block align-text3">
                           <h5>Фристайл</h5>
                           <h5>Freestyle</h5>
-                        </div>
+                          <!--<p>Фристайл направление, где сноубордисты выполняют трюки на специальной трассе, например, прыжок, грэб или сальто.</p>
+                          -->                </div>
                       </div>
 
                     </div>
@@ -162,6 +172,7 @@
                 <p>Исходя из названия сразу понятно – это смесь направленной и симметричной досок. При смещении креплений к одному из концов сноуборда, на такой доске можно покататься и по мягкому снегу. А поставив крепления по центру, доска превращается в симметричную, для использования, преимущественно в парках.</p>
               </div>           
         </div>
+        </div>
     </div>
     <br>
     <a href="#" class="back-to-top"></a>
@@ -170,18 +181,11 @@
         <p>2019-2020 &copy;Денисова Анна </p>
     </footer>
 
-    <!--<div id="preloader">
-      <div class="container">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>-->
+</div>
+
+    
+
+  
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
@@ -216,22 +220,17 @@
     <script>
   
     function ChangeThem(){
-      if (document.getElementById("CSSstyle").href=="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-light-them-eye.css")
+      if (document.getElementById("CSSstyle").href=="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-light-them.css")
       {
-        /*document.getElementById('tema').style="background-colo:white";*/
-
-        document.getElementById("CSSstyle").href="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-dark-them-eye.css";
+        document.getElementById("CSSstyle").href="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-dark-them.css";
       }
       else
       {
-        /*document.getElementById('tema').style="background-colo:black";*/
-        document.getElementById("CSSstyle").href="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-light-them-eye.css";
+        document.getElementById("CSSstyle").href="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-light-them.css";
       }
     }
     </script>
-
-
-    
+ 
     <script>
         jQuery(function($){
         $('a[href*="#"]').on('click.smoothscroll', function( e ){
@@ -260,17 +259,23 @@
           {
             console.log(`key:${key},prop:${a[key]}`);
           }*/
+          $('.preloader').show();
+          $('.bigcontent').hide();
+           /*$('#head').hide();
            $('header').hide();
            $('#content').hide();
            $('footer').hide();
-          $('#preloader').show();
+          $('.preloader').show();*/
 
          setTimeout(function(){
-          $('#preloader').show();
+          $('.preloader').hide();
+          $('.bigcontent').show();
+          /*$('.preloader').hide();
            $('header').show();
            $('#content').show();
            $('footer').show();
-         },0)
+           $('#head').show();*/
+         },5000);
 
         </script>
 </body>
