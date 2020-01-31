@@ -9,7 +9,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style-light-them-eye.css" id="CSSstyle">
+    <link rel="stylesheet" href="../css/style-light-them-eye.css" id="styleLightEye">
 
 <body>
 
@@ -216,18 +216,26 @@
     <script>
   
     function ChangeThem(){
-      if (document.getElementById("CSSstyle").href=="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-light-them-eye.css")
+      if (document.getElementById("styleLightEye")!=undefined)
       {
-        /*document.getElementById('tema').style="background-colo:white";*/
-
-        document.getElementById("CSSstyle").href="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-dark-them-eye.css";
+        if (document.getElementById("styleLightEye").id=="styleLightEye")
+        {
+          document.getElementById("styleLightEye").href="../css/style-dark-them-eye.css";
+          document.getElementById("styleLightEye").id="styleDarkEye";
+        }  
       }
-      else
-      {
-        /*document.getElementById('tema').style="background-colo:black";*/
-        document.getElementById("CSSstyle").href="file:///F:/Unic/6%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9C%D0%B8%D0%A1%D0%9F%D0%98%D0%A1%D0%B8%D0%A2/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/blog/css/style-light-them-eye.css";
+      else{
+        if (document.getElementById("styleDarkEye")!=undefined)
+        {
+          if (document.getElementById("styleDarkEye").id=="styleDarkEye")
+          {
+            document.getElementById("styleDarkEye").href="../css/style-light-them-eye.css";
+            document.getElementById("styleDarkEye").id="styleLightEye";
+          }
+        }
       }
     }
+  
     </script>
 
 
